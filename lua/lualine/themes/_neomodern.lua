@@ -1,18 +1,25 @@
 local M = {}
 
 function M.get()
-    local colors = require("neomodern.terminal").colors(true)
+    ---@type neomodern.Config
+    local opts = require("neomodern").opts
+    ---@type neomodern.Palette
+    local palette = require("neomodern.palette").get(
+        opts.theme,
+        opts.background,
+        opts.overrides.default
+    )
     local c = {
-        norm = colors.blue,
-        ins = colors.yellow,
-        vis = colors.purple,
-        rep = colors.cyan,
-        comm = colors.orange,
-        fg_dim = colors.comment,
-        vcs = colors.alt,
-        bg_b = colors.visual,
-        bg_c = colors.line,
-        dark = colors.bg,
+        norm = palette.base16.blue,
+        ins = palette.base16.yellow,
+        vis = palette.base16.magenta,
+        rep = palette.base16.cyan,
+        comm = palette.base16.red,
+        fg_dim = palette.spec.comment,
+        vcs = palette.spec.alt,
+        bg_b = palette.spec.visual,
+        bg_c = palette.spec.line,
+        dark = palette.spec.bg,
         none = "none",
     }
 
