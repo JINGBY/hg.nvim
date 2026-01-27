@@ -24,7 +24,7 @@ modern — simple — unintrusive
 
 ### 🌚 MOON
 
-A spacy, moon inspired theme
+A dark, spacy theme inspired by the colors of the moon
 
 <details open>
 <summary>Dark Variant</summary>
