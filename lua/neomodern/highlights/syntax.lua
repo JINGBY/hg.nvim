@@ -25,9 +25,9 @@ function M.get(palette)
         Number = { fg = palette.number }, -- number constant
         Operator = { fg = palette.operator, fmt = Config.code_style.operators }, -- '+', '*', 'sizeof' etc
         PreProc = { fg = palette.string }, -- (preferred) generic preprocessor
-        -- Define = { fg = palette.comment }, -- preprocessor '#define'
+        Define = { fg = palette.string }, -- preprocessor '#define'
         Include = { fg = palette.constant, fmt = Config.code_style.keywords }, -- preprocessor '#include'
-        Macro = { fg = palette.number, fmt = "italic" }, -- macros
+        Macro = { fg = palette.fg }, -- macros
         -- PreCondit = { fg = palette.comment }, -- preprocessor conditionals '#if', '#endif' etc
         Special = { fg = palette.type }, -- (preferred) any special symbol
         SpecialChar = { fg = palette.keyword }, -- special character in a constant

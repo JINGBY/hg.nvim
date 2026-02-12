@@ -170,11 +170,7 @@ end
 
 ---@enum
 M.themes = {
-    moon = "moon",
     iceclimber = "iceclimber",
-    gyokuro = "gyokuro",
-    hojicha = "hojicha",
-    roseprime = "roseprime",
 }
 
 return M

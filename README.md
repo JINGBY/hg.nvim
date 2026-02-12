@@ -5,7 +5,6 @@ modern — simple — unintrusive
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/github/v/tag/cdmill/neomodern.nvim?style=flat&label=RELEASE&labelColor=%23212123&color=%238a88db" />
 <img src="https://img.shields.io/badge/BUILT_WITH_LUA-blue?style=flat&color=%23629da3" />
 <img src="https://img.shields.io/badge/NEOVIM-0.9-blue?style=flat&logo=Neovim&labelColor=%23212123&color=%238a88db" />
 </p>
@@ -21,24 +20,6 @@ modern — simple — unintrusive
 - [Inspiration](inspiration)
 
 ## Gallery
-
-### 🌚 MOON
-
-A dark, spacy theme inspired by the colors of the moon
-
-<details open>
-<summary>Dark Variant</summary>
-
-![image](https://github.com/cdmill/neomodern.nvim/blob/assets/moon-dark.png)
-
-</details>
-
-<details closed>
-<summary>Light Variant</summary>
-
-![image](https://github.com/cdmill/neomodern.nvim/blob/assets/moon-light.png)
-
-</details>
 
 ### ❄️ *ICECLIMBER*
 
@@ -58,59 +39,6 @@ A theme with colors inspired from Nintendo's Ice Climbers characters
 
 </details>
 
-### 🌱 *GYOKURO*
-
-A fresh green tea inspired theme
-
-<details open>
-<summary>Dark Variant</summary>
-
-![image](https://github.com/cdmill/neomodern.nvim/blob/assets/gyokuro-dark.png)
-
-</details>
-
-<details closed>
-<summary>Light Variant</summary>
-
-![image](https://github.com/cdmill/neomodern.nvim/blob/assets/gyokuro-light.png)
-
-</details>
-
-### 🍂 *HOJICHA*
-
-A roasted green tea inspired theme
-
-<details open>
-<summary>Dark Variant</summary>
-
-![image](https://github.com/cdmill/neomodern.nvim/blob/assets/hojicha-dark.png)
-
-</details>
-
-<details closed>
-<summary>Light Variant</summary>
-
-![image](https://github.com/cdmill/neomodern.nvim/blob/assets/hojicha-light.png)
-
-</details>
-
-### 🌷 *ROSEPRIME*
-
-Inspired by [ThePrimeagen's](https://github.com/ThePrimeagen) use of the [Rosé-Pine](https://github.com/rose-pine/neovim) theme
-
-<details open>
-<summary>Dark Variant</summary>
-
-![image](https://github.com/cdmill/neomodern.nvim/blob/assets/roseprime-dark.png)
-
-</details>
-
-<details closed>
-<summary>Light Variant</summary>
-
-![image](https://github.com/cdmill/neomodern.nvim/blob/assets/roseprime-light.png)
-
-</details>
 
 ## Installation
 
@@ -134,8 +62,8 @@ require("neomodern").load("iceclimber")
 
 ## Configuration
 
-There are 5 themes included, each with a light and dark variant.
-The light theme is used when `vim.o.background = "light"`.
+There is one theme included, with a light and dark variant.
+The light variant is used when `vim.o.background = "light"`.
 
 Default options are given below:
 
@@ -146,7 +74,7 @@ require("neomodern").setup({
   -- 'transparent' background is not set
   bg = "default",
 
-  theme = "moon", -- 'moon' | 'iceclimber' | 'gyokuro' | 'hojicha' | 'roseprime'
+  theme = "iceclimber",
 
   gutter = {
     cursorline = false, -- highlight the cursorline in the gutter
@@ -221,8 +149,7 @@ end, { desc = "Toggle between light/dark mode" })
 
 ## Contributing
 
-If you are wanting support for a plugin or an extra please open an issue or
-submit a PR.
+If you are wanting support for a plugin please open an issue or submit a PR.
 
 ## Inspiration
 
