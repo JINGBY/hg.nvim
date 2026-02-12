@@ -12,7 +12,7 @@ M.get = function(palette, _, _)
 
         -- ["@constant"] = { link = "Constant" }, -- constants
         ["@constant.builtin"] = { link = "Type" }, -- constants that are defined by the language, like 'nil' in lua
-        ["@constant.macro"] = { link = "Macro" }, -- constants that are defined by macros like 'NULL' in c
+        ["@constant.macro"] = { link = "Define" }, -- constants that are defined by macros like 'NULL' in c
 
         -- ["@label"] = { link = "Label" }, -- labels
         ["@module"] = { link = "Type" }, -- modules and namespaces
@@ -61,7 +61,7 @@ M.get = function(palette, _, _)
         }, -- keywords that don't fall in previous categories
         ["@keyword.exception"] = { link = "Exception" }, -- exception related keywords
         ["@keyword.directive"] = { link = "PreProc" }, -- preprocessor directives like '#define'
-        ["@keyword.directive.define"] = { link = "PreProc" }, -- '#define'
+        ["@keyword.directive.define"] = { link = "Define" }, -- '#define'
         ["@keyword.directive.conditional"] = { link = "PreProc" }, -- '#if', '#ifdef', '#endif'
         ["@preproc"] = { link = "PreProc" }, -- legacy preproc captures
         ["@preproc.define"] = { link = "PreProc" },
