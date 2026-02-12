@@ -12,7 +12,7 @@ M.get = function(palette, _, _)
 
         -- ["@constant"] = { link = "Constant" }, -- constants
         ["@constant.builtin"] = { link = "Type" }, -- constants that are defined by the language, like 'nil' in lua
-        ["@constant.macro"] = { link = "Define" }, -- constants that are defined by macros like 'NULL' in c
+        ["@constant.macro"] = { link = "Macro" }, -- constants that are defined by macros like 'NULL' in c
 
         -- ["@label"] = { link = "Label" }, -- labels
         ["@module"] = { link = "Type" }, -- modules and namespaces

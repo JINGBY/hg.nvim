@@ -27,7 +27,7 @@ function M.get(palette)
         PreProc = { fg = palette.string }, -- (preferred) generic preprocessor
         Define = { fg = palette.string }, -- preprocessor '#define'
         Include = { fg = palette.constant, fmt = Config.code_style.keywords }, -- preprocessor '#include'
-        Macro = { fg = palette.fg }, -- macros
+        Macro = { fg = palette.type }, -- macros
         -- PreCondit = { fg = palette.comment }, -- preprocessor conditionals '#if', '#endif' etc
         Special = { fg = palette.type }, -- (preferred) any special symbol
         SpecialChar = { fg = palette.keyword }, -- special character in a constant

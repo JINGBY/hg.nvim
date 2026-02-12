@@ -22,7 +22,7 @@ M.get = function(palette, _, _)
         PreProc = { guifg = palette.string },
         Define = { guifg = palette.string },
         Include = { guifg = palette.constant },
-        Macro = { guifg = palette.fg },
+        Macro = { guifg = palette.type },
         PreCondit = { guifg = palette.string },
         Special = { guifg = palette.type },
         SpecialChar = { guifg = palette.keyword },
