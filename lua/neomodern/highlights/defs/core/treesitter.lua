@@ -12,7 +12,7 @@ M.get = function(palette, _, _)
 
         -- ["@constant"] = { link = "Constant" }, -- constants
         ["@constant.builtin"] = { link = "Type" }, -- constants that are defined by the language, like 'nil' in lua
-        -- ["@constant.macro"] = { link = "Macro" }, -- constants that are defined by macros like 'NULL' in c
+        ["@constant.macro"] = { link = "Macro" }, -- constants that are defined by macros like 'NULL' in c
 
         -- ["@label"] = { link = "Label" }, -- labels
         ["@module"] = { link = "Type" }, -- modules and namespaces
@@ -44,7 +44,7 @@ M.get = function(palette, _, _)
         -- functions
         ["@function"] = { link = "Function" }, -- functions
         ["@function.builtin"] = { link = "Function" }, --builtin functions
-        -- ["@function.macro"] = { link = "Macro" }, -- macro defined functions
+        ["@function.macro"] = { link = "Macro" }, -- macro defined functions
         -- ["@function.call"]
         -- ["@function.method"]
         -- ["@function.method.call"]
@@ -60,6 +60,12 @@ M.get = function(palette, _, _)
             guifg = palette.keyword,
         }, -- keywords that don't fall in previous categories
         ["@keyword.exception"] = { link = "Exception" }, -- exception related keywords
+        ["@keyword.directive"] = { link = "PreProc" }, -- preprocessor directives like '#define'
+        ["@keyword.directive.define"] = { link = "PreProc" }, -- '#define'
+        ["@keyword.directive.conditional"] = { link = "PreProc" }, -- '#if', '#ifdef', '#endif'
+        ["@preproc"] = { link = "PreProc" }, -- legacy preproc captures
+        ["@preproc.define"] = { link = "PreProc" },
+        ["@preproc.conditional"] = { link = "PreProc" },
         -- ["@keyword.import"] = M.{ link = "PreProc" },, -- keywords used to define a function
         ["@keyword.conditional"] = {
             guifg = palette.keyword,

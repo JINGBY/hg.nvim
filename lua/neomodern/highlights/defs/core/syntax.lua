@@ -23,7 +23,7 @@ M.get = function(palette, _, _)
         Define = { guifg = palette.string },
         Include = { guifg = palette.constant },
         Macro = { guifg = palette.fg },
-        -- PreCondit = { guifg = palette.comment },
+        PreCondit = { guifg = palette.string },
         Special = { guifg = palette.type },
         SpecialChar = { guifg = palette.keyword },
         -- SpecialComment = { guifg = palette.keyword },
